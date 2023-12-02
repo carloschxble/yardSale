@@ -1,0 +1,122 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+/* VARIABLES */
+:root {
+    --white: #fff;
+    --black: #000;
+    --text-input-field: #f7f7f7;
+    --very-light-pink: #c7c7c7;
+    --hospital-green: #acd9b2;
+
+    --light: 300;
+    --medium: 500;
+    --bold: 700;
+}
+
+/* DEFAULT */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* CODE */
+body {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 360px;
+    height: auto;
+}
+
+body section header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+body section header .header__logo img {
+    width: auto;
+    height: 3.2rem;
+}
+
+body section header .header__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+body section header .header__texts h1,
+body section header .header__texts h2 {
+    font-size: 1.8rem;
+    font-weight: var(--bold);
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+body section header .header__texts h2 {
+    font-weight: var(--medium);
+    color: var(--very-light-pink);
+}
+
+body section form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+body section form .form__password,
+body section form .form__repeat-password {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: var(--bold);
+    line-height: 1.4rem;
+    color: var(--black);
+}
+
+body section form .form__password input,
+body section form .form__repeat-password input {
+    padding: 1.2rem 0.8rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: var(--text-input-field);
+    font-size: 1.4rem;
+    font-weight: var(--light);
+    line-height: 1.4rem;
+}
+
+body section form .form__button-confirm {
+    padding: 1.6rem 0;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    background-color: var(--hospital-green);
+    font-size: 1.6rem;
+    font-weight: var(--bold);
+    line-height: 1.6rem;
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+
+body section form .form__button-confirm:hover {
+    background-color: rgb(129, 167, 134);
+    cursor: pointer;
+}
